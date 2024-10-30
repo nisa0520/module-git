@@ -1,0 +1,119 @@
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.7);
+}
+
+.modal-content {
+  position: relative;
+  background: white;
+  padding: 40px; 
+  border-radius: 8px;
+  z-index: 1001;
+  width: 90%;
+  max-width: 600px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.modal-content h2 {
+  font-size: 2rem; 
+  margin: 0 0 20px; 
+  text-align: center; 
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+  font-size: 1rem;
+  text-align: left;
+}
+
+.form-group input {
+  width: 100%;
+  padding: 15px; 
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 1rem; 
+}
+
+.modal-buttons {
+  display: flex;
+  flex-direction: row; 
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.btn-sewa,
+.close-modal {
+  padding: 12px 20px; 
+  flex: 1; 
+  margin: 0 5px; 
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.btn-sewa {
+  background-color: #13B62E;
+  color: white;
+  border: none;
+}
+
+.btn-sewa:hover {
+  background-color: #0b5517;
+}
+
+.close-modal {
+  background-color: #ccc;
+  color: black;
+  border: none;
+}
+
+.close-modal:hover {
+  background-color: #bbb;
+}
+
+@media (max-width: 768px) {
+  .modal-content {
+    padding: 20px;
+  }
+
+  .modal-content h2 {
+    font-size: 1.8rem; 
+  }
+
+  .form-group input {
+    padding: 12px; 
+  }
+
+  .modal-buttons {
+    flex-direction: column; 
+    align-items: stretch; 
+  }
+
+  .btn-sewa,
+  .close-modal {
+    padding: 10px;
+    margin: 5px 0; 
+  }
+}

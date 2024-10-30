@@ -1,0 +1,97 @@
+.teltonika {
+    text-align: center;
+    padding: 200px; 
+    width: 100%;
+  }
+  
+  .teltonika h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+  }
+  
+  .teltonika p {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+  }
+  
+  .teltonika-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    padding: 0 20px;
+  }
+  
+  .singleTeltonika {
+    background-color: #f8f9fa;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+  }
+  
+  .singleTeltonika:hover {
+    transform: translateY(-10px);
+  }
+  
+  .imageDiv img {
+    width: 50%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 15px;
+  }
+  
+  .cardInfo .telTitle {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    color: #333;
+    text-align: left;
+  }
+  
+  .fees-and-button {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+  }
+
+  .fees .price h5 {
+    font-size: 1.2rem;
+    color: #6d6868;
+    text-align: left;
+  }
+  
+  .cardInfo {
+    display: flex;
+    flex-direction: column;
+    /* align-items: flex-start; Menjaga teks tetap di kiri */
+  }
+
+  .btn {
+    /* margin-top: 15px; */
+    padding: 10px 20px;
+    font-size: 1.5rem;
+    color: white;
+    background-color: #007bff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    align-self: flex-end;
+  }
+  
+  .btn:hover {
+    background-color: #0056b3;
+  }
+  
+  @media (max-width: 768px) {
+    .teltonika-grid {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+  
+  @media (max-width: 576px) {
+    .teltonika-grid {
+      grid-template-columns: 1fr;
+    }
+  }
+  

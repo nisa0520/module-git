@@ -94,7 +94,7 @@ const Teltonika = () => {
           </div>
         </div>
       </section>
-      {isModalOpen && <Modal onClose={closeModal} />} {/* Render the Modal if open */}
+      {isModalOpen && <Modal onClose={closeModal} />}
       <Footer />
     </>
   );

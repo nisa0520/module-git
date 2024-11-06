@@ -1,7 +1,7 @@
 import React, { Component, useState } from 'react'
 import './navbar.css'
 import { MenuItems } from './MenuItems';
-//import { FaTruck } from "react-icons/fa";
+import { FaTruck } from "react-icons/fa";
 import { IoIosCloseCircle } from "react-icons/io";
 import { IoReorderThreeOutline } from "react-icons/io5";
 import img1 from "../landing_page/truk4.png"
@@ -16,7 +16,8 @@ class Navbar extends Component{
         return(
             <nav className="NavbarItems">
                 <h1 className="navbar-logo">
-                <img src={img1} alt="Logo" className="logo-image" />
+                    <FaTruck />
+                    SMART TRACKING.
                 </h1>
 
                 <div className="menu-icons" onClick={this.handleClick}>
@@ -43,3 +44,4 @@ class Navbar extends Component{
 }
 
 export default Navbar
+

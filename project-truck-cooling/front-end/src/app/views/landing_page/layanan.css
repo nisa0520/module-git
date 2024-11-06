@@ -34,7 +34,7 @@
     background-color: white;
     border-radius: 7px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-    padding: 20px;
+    padding: 40px 20px; /* Increased padding to center icon better */
     width: 100%;
     max-width: 400px;
     text-align: center;
@@ -51,8 +51,9 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-left: auto;
+    margin-right: auto;
 }
-
 
 .item-heading {
     font-size: 1.5rem;

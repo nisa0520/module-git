@@ -14,14 +14,8 @@
 
 .footer-logo{
   color: #ffff;
-  font-size: 2rem;
+  font-size: 1.5rem;
   margin-left: 1rem;
-}
-
-.logo-image{
-  height: 70px;
-  width: auto;
-  margin-right: 10px;
 }
 
 .footer-logo:hover{

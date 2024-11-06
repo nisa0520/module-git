@@ -15,6 +15,7 @@
   }
   
   .teltonika-grid {
+    padding: 2rem 1rem;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 20px;
@@ -82,16 +83,16 @@
   .btn:hover {
     background-color: #0056b3;
   }
-  
-  @media (max-width: 768px) {
+
+  @media screen and (max-width: 1024px) {
     .teltonika-grid {
-      grid-template-columns: repeat(2, 1fr);
+        grid-template-columns: repeat(2, 1fr);
     }
   }
   
-  @media (max-width: 576px) {
+  @media screen and (max-width: 768px) {
     .teltonika-grid {
-      grid-template-columns: 1fr;
+        grid-template-columns: 1fr;
     }
   }
   

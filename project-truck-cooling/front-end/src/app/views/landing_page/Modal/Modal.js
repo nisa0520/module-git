@@ -25,10 +25,10 @@ export default function Modal({ onClose }) {
       }
 
       const data = await response.json();
-      setUserData((prevData) => [...prevData, data]); // Menambahkan data baru ke userData
+      setUserData((prevData) => [...prevData, data]); 
       setName('');
       setPhone('');
-      onClose(); // Menutup modal setelah submit
+      onClose(); 
     } catch (err) {
       console.error("Error submitting data:", err);
     }

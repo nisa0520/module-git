@@ -1,4 +1,3 @@
-// Teltonika.jsx
 import React, { useState } from 'react';
 import Navbar from '../landing_page/Navbar';
 import Footer from '../landing_page/Footer';
@@ -61,6 +60,16 @@ const Teltonika = () => {
     setModalOpen(false);
   };
 
+  const openWhatsApp = () => {
+    const phoneNumber = "6285869124329"; // Ganti dengan nomor WhatsApp tujuan
+    const message = `Halo, saya tertarik untuk menyewa Teltonika.
+Berikut identitas saya: 
+NAMA: 
+JENIS TELTONIKA: `;
+    const whatsappUrl = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
+    window.open(whatsappUrl, '_blank');
+  };
+
   return (
     <>
       <Navbar />
@@ -85,8 +94,6 @@ const Teltonika = () => {
                         <h5>{fees}</h5>
                       </div>
                     </div>
-
-                    <button className='btn flex' onClick={openModal}>Sewa</button>
                   </div>
                 </div>
               );
@@ -94,10 +101,12 @@ const Teltonika = () => {
           </div>
         </div>
       </section>
-      {isModalOpen && <Modal onClose={closeModal} />}
+      {isModalOpen && <Modal onClose={() => setModalOpen(false)} />}
+      <button className='btn flex' onClick={openWhatsApp}>Sewa</button>
       <Footer />
     </>
   );
 };
+
 
 export default Teltonika;

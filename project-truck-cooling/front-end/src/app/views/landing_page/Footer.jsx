@@ -1,6 +1,7 @@
 import './footer.css';
 import { FaTruck, FaFacebookSquare, FaInstagramSquare } from "react-icons/fa";
 import { FaSquareXTwitter } from "react-icons/fa6";
+import img1 from "../landing_page/icon-es.png"
 
 const Footer = () => {
   return (
@@ -8,10 +9,10 @@ const Footer = () => {
       <div className="top">
         <div>
         <h1 className="footer-logo">
-            <FaTruck />
-            SMART TRACKING.
+        <img 
+            src={img1} 
+            />
         </h1>
-        <p>Monitoring Truck Cooling and Cold Storage</p>
         </div>
         <div>
           <a href="/" className='logo'>

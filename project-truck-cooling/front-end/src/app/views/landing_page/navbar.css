@@ -28,10 +28,6 @@
     /* margin-right: 3px;  */
 }
 
-/* .navbar-logo svg {
-    margin-right: 1px; 
-} */
-
 .nav-menu{
     display: grid;
     grid-template-columns: repeat(6, auto);

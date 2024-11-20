@@ -1,5 +1,6 @@
-//import React from 'react';
-import './testimoni.css'; 
+import { useInView } from "react-intersection-observer";
+import { motion } from "framer-motion";
+import './testimoni.css';
 
 function Testimonials() {
   return (
@@ -31,14 +32,25 @@ function Testimonials() {
 }
 
 function Card({ image, name, text }) {
+  const { ref, inView } = useInView({
+    triggerOnce: true,  // Animasi hanya terjadi sekali
+    threshold: 0.5,  // Elemen harus terlihat minimal 10% untuk animasi dimulai
+  });
+
   return (
-    <div className="card">
+    <motion.div
+      ref={ref}
+      className="card"
+      initial={{ opacity: 0 }}
+      animate={{ opacity: inView ? 1 : 0 }}
+      transition={{ duration: 1.0, delay: 0.2 }} // Menambahkan delay agar animasi terlihat bertahap
+    >
       <span><i className="ri-double-quotes-l"></i></span>
       <p>{text}</p>
       <hr />
       <img src={image} alt="user" />
       <p className="name">{name}</p>
-    </div>
+    </motion.div>
   );
 }
 

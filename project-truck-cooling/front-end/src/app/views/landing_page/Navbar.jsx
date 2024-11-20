@@ -18,7 +18,6 @@ class Navbar extends Component{
                 <h1 className="navbar-logo">
                 <img 
                         src={img1} 
-                        // alt="Logo" 
                     />
                 </h1>
 

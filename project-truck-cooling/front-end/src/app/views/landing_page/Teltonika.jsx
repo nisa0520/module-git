@@ -61,7 +61,7 @@ const Teltonika = () => {
   };
 
   const openWhatsApp = () => {
-    const phoneNumber = "6285869124329"; // Ganti dengan nomor WhatsApp tujuan
+    const phoneNumber = "6285869124329"; 
     const message = `Halo, saya tertarik untuk menyewa Teltonika.
 Berikut identitas saya: 
 NAMA: 
@@ -99,10 +99,11 @@ JENIS TELTONIKA: `;
               );
             })}
           </div>
+
+          {isModalOpen && <Modal onClose={() => setModalOpen(false)} />}
+          <button className='btn flex' onClick={openWhatsApp}>Sewa</button>
         </div>
       </section>
-      {isModalOpen && <Modal onClose={() => setModalOpen(false)} />}
-      <button className='btn flex' onClick={openWhatsApp}>Sewa</button>
       <Footer />
     </>
   );

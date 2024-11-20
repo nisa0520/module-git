@@ -1,18 +1,29 @@
-import React from "react";
+import { motion } from "framer-motion";
 import "./hero.css";
 
 function Hero(props) {
   return (
     <div className={props.cName}>
-      <img alt="HeroImg" src={props.heroImg} />
+      <motion.img
+        alt="HeroImg"
+        src={props.heroImg}
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        transition={{ duration: 1 }}
+      />
 
-      <div className="hero-text">
+      <motion.div
+        className="hero-text"
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        transition={{ duration: 1, delay: 0.7 }}
+      >
         <h1>{props.title}</h1>
         <p>{props.text}</p> {/* Teks diambil dari props */}
         <a href={props.url} className={props.btnClass}>
-            {props.buttonText}
+          {props.buttonText}
         </a>
-      </div>
+      </motion.div>
     </div>
   );
 }

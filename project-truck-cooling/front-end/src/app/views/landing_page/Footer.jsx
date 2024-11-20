@@ -1,7 +1,7 @@
 import './footer.css';
 import { FaTruck, FaFacebookSquare, FaInstagramSquare } from "react-icons/fa";
 import { FaSquareXTwitter } from "react-icons/fa6";
-import img1 from "../landing_page/es-ikon.png"
+import img1 from "../landing_page/Logo SCCM_3.png"
 
 const Footer = () => {
   return (
@@ -10,7 +10,6 @@ const Footer = () => {
         <div>
         <h1 className="footer-logo">
         <img src={img1} />
-        SMART COLD CHAIN MONITORING.
         </h1>
         </div>
         <div>

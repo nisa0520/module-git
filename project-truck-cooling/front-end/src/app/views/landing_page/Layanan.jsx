@@ -6,8 +6,8 @@ import layananData from "./layananData";
 
 function Layanan() {
   const [ref, inView] = useInView({
-    triggerOnce: true, // Animasi hanya terjadi sekali
-    threshold: 0.2,    // Elemen mulai terlihat saat 20% muncul di viewport
+    triggerOnce: true, 
+    threshold: 0.2,    
   });
 
   const containerVariants = {

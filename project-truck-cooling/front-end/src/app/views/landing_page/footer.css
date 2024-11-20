@@ -12,24 +12,24 @@
   flex-wrap: wrap;
 }
 
-.footer-logo{
+/* .footer-logo{
   color: #ffff;
-  font-size: 1rem;
+  font-size: 2rem;
   margin-left: 1rem;
-}
+} */
 
 .footer-logo img {
-  width: 90px; 
-  height: 90px;
+  width: 200px; 
+  height: 70px;
   /* margin-right: 3px;  */
 }
-
+/* 
 .footer-logo {
   display: flex;
   align-items: center; 
   font-size: 1.5rem;
   cursor: pointer;
-}
+} */
 
 .footer-logo:hover{
   color: black;

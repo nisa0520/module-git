@@ -4,21 +4,21 @@ export const MenuItems = [
         url : '/home',
         cName : "nav-links"
     },
-    {
-        title : "Layanan",
-        url : "/layanan",
-        cName : "nav-links"
-    },
-    {
-        title : "Testimonial",
-        url : "/testimonial",
-        cName : "nav-links"
-    },
-    {
-        title : "Tentang Kami",
-        url : "/tentangkami",
-        cName : "nav-links"
-    },
+    // {
+    //     title : "Layanan",
+    //     url : "/layanan",
+    //     cName : "nav-links"
+    // },
+    // {
+    //     title : "Testimonial",
+    //     url : "/testimonial",
+    //     cName : "nav-links"
+    // },
+    // {
+    //     title : "Tentang Kami",
+    //     url : "/tentangkami",
+    //     cName : "nav-links"
+    // },
     {
         title : "Login",
         url : "/login",

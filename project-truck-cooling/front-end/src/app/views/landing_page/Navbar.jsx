@@ -4,7 +4,7 @@ import { MenuItems } from './MenuItems';
 import { FaTruck } from "react-icons/fa";
 import { IoIosCloseCircle } from "react-icons/io";
 import { IoReorderThreeOutline } from "react-icons/io5";
-import img1 from "../landing_page/icon-es.png"
+import img1 from "../landing_page/es-ikon.png"
 
 class Navbar extends Component{
     state = { clicked: false };
@@ -16,9 +16,8 @@ class Navbar extends Component{
         return(
             <nav className="NavbarItems">
                 <h1 className="navbar-logo">
-                <img 
-                        src={img1} 
-                    />
+                <img src={img1} />
+                SMART COLD CHAIN MONITORING.
                 </h1>
 
                 <div className="menu-icons" onClick={this.handleClick}>

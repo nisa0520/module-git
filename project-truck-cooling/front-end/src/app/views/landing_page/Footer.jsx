@@ -1,7 +1,7 @@
 import './footer.css';
 import { FaTruck, FaFacebookSquare, FaInstagramSquare } from "react-icons/fa";
 import { FaSquareXTwitter } from "react-icons/fa6";
-import img1 from "../landing_page/Logo SCCM_3.png"
+import img1 from "../landing_page/Logo SCCM_A.png"
 
 const Footer = () => {
   return (

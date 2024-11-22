@@ -4,7 +4,7 @@ import { MenuItems } from './MenuItems';
 import { FaTruck } from "react-icons/fa";
 import { IoIosCloseCircle } from "react-icons/io";
 import { IoReorderThreeOutline } from "react-icons/io5";
-import img1 from "../landing_page/Logo SCCM_3.png"
+import img1 from "../landing_page/Logo SCCM_A.png"
 
 class Navbar extends Component{
     state = { clicked: false };

@@ -1,43 +1,42 @@
-.hero{
+.hero {
     width: 100%;
     height: 100vh;
     position: relative;
 }
 
-img{
+img {
     width: 100%;
     height: 100%;
     object-fit: cover;
 }
 
-.hero-text{
+.hero-text {
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     width: 100%;
+    text-align: center; /* Pastikan teks berada di tengah */
     font-size: 20px;
 }
 
-.hero-text .show:hover{
+.hero-text .show:hover {
     color: #043873;
 }
 
-.hero-text h1{
+.hero-text h1 {
     font-size: 3rem;
     font-weight: 800;
     color: #ffff;
-    /* -webkit-background-clip: text; */
-    /* -webkit-text-fill-color: transparent; */
 }
 
-.hero-text p{
+.hero-text p {
     font-size: 1.5rem;
     color: #ffff;
     padding: 0.5rem 0 2rem 0;
 }
 
-.hero-text .show{
+.hero-text .show {
     text-decoration: none;
     background: #00A3D9;
     padding: 1rem 2rem;
@@ -49,22 +48,41 @@ img{
 }
 
 @media screen and (max-width: 555px) {
-    .hero-text h1{
+    .hero-text h1 {
+        font-size: 2rem; /* Ukuran heading lebih kecil untuk layar kecil */
         padding: 10px 20px;
     }
 
-    .hero-text p{
+    .hero-text p {
         font-size: 1.1rem;
         padding: 0 0 2rem 0;
     }
 
-    .hero-text .show{
-        padding: .6rem 1.1rem;
+    .hero-text .show {
+        padding: 0.6rem 1.1rem;
         border-radius: 6px;
         font-size: 1rem;
     }
 
-    .hero-text .show:hover{
+    .hero-text .show:hover {
         color: #043873;
+    }
+}
+
+@media screen and (max-width: 360px) {
+    .hero-text h1 {
+        font-size: 1.8rem; /* Ukuran lebih kecil untuk layar 360px */
+        padding: 0 10px;
+    }
+
+    .hero-text p {
+        font-size: 1rem; /* Ukuran paragraf lebih kecil */
+        padding: 0 10px 1.5rem 10px; /* Tambahkan padding agar tidak terlalu rapat */
+    }
+
+    .hero-text .show {
+        padding: 0.5rem 1rem;
+        border-radius: 4px; /* Kurangi radius tombol */
+        font-size: 0.9rem; /* Ukuran teks tombol lebih kecil */
     }
 }

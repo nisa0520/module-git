@@ -15,7 +15,7 @@ function Home() {
       <Navbar />
       <Hero 
         cName="hero"
-        title="Monitoring Truck Cooling and Cold Storage"
+        title="Cold Chain Smart Monitoring"
         heroImg={require('../landing_page/truk2.jpg')}
         text={heroText} // Menggunakan state untuk teks
         buttonText="Sewa Teltonika"
